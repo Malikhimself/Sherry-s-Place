@@ -1,0 +1,82 @@
+[
+    {
+        "id": 101,
+        "userId": 1,
+        "items": [
+            {
+                "productId": 1,
+                "quantity": 1,
+                "price": 299.99
+            },
+            {
+                "productId": 3,
+                "quantity": 2,
+                "price": 24.99
+            }
+        ],
+        "total": 349.97,
+        "status": "delivered",
+        "createdAt": "2024-06-01T10:00:00Z"
+    },
+    {
+        "id": 102,
+        "userId": 3,
+        "items": [
+            {
+                "productId": 2,
+                "quantity": 1,
+                "price": 49.99
+            }
+        ],
+        "total": 49.99,
+        "status": "processing",
+        "createdAt": "2024-06-02T14:30:00Z"
+    },
+    {
+        "id": 103,
+        "userId": 4,
+        "items": [
+            {
+                "productId": 5,
+                "quantity": 1,
+                "price": 39.99
+            },
+            {
+                "productId": 6,
+                "quantity": 1,
+                "price": 59.99
+            }
+        ],
+        "total": 99.98,
+        "status": "shipped",
+        "createdAt": "2024-06-03T09:15:00Z"
+    },
+    {
+        "id": 104,
+        "userId": 1,
+        "items": [
+            {
+                "productId": 4,
+                "quantity": 3,
+                "price": 19.99
+            }
+        ],
+        "total": 59.97,
+        "status": "delivered",
+        "createdAt": "2024-06-04T16:45:00Z"
+    },
+    {
+        "id": 105,
+        "userId": 5,
+        "items": [
+            {
+                "productId": 7,
+                "quantity": 1,
+                "price": 129.99
+            }
+        ],
+        "total": 129.99,
+        "status": "pending",
+        "createdAt": "2024-06-05T11:20:00Z"
+    }
+]

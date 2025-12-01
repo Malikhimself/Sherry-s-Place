@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Copper Cookware Set",
+    "description": "Hand-hammered copper cookware for professional-grade cooking. Includes 2 saucepans, 1 stockpot, and 1 skillet.",
+    "price": 299.99,
+    "image": "/products/copper-cookware.png",
+    "category": "Cookware"
+  },
+  {
+    "id": 2,
+    "name": "Artisan Ceramic Vase",
+    "description": "Beautifully crafted ceramic vase to elevate your home decor. Each piece is unique and hand-painted.",
+    "price": 49.99,
+    "image": "/products/ceramic-vase.png",
+    "category": "Decor"
+  },
+  {
+    "id": 3,
+    "name": "Organic Bamboo Cutting Board",
+    "description": "Sustainable and durable cutting board for your kitchen needs. Naturally antibacterial and knife-friendly.",
+    "price": 24.99,
+    "image": "/products/cutting-board.png",
+    "category": "Kitchen Tools"
+  },
+  {
+    "id": 4,
+    "name": "Luxury Scented Candle",
+    "description": "Relax with the soothing aroma of our premium soy wax candles. Available in Lavender, Vanilla, and Sandalwood.",
+    "price": 19.99,
+    "image": "/products/scented-candle.png",
+    "category": "Home Fragrance"
+  },
+  {
+    "id": 5,
+    "name": "Cast Iron Skillet",
+    "description": "Pre-seasoned cast iron skillet for perfect searing and baking. A kitchen essential that lasts a lifetime.",
+    "price": 39.99,
+    "image": "/products/cast-iron-skillet.png",
+    "category": "Cookware"
+  },
+  {
+    "id": 6,
+    "name": "Marble Cheese Board",
+    "description": "Elegant marble cheese board with gold handles. Perfect for entertaining guests.",
+    "price": 59.99,
+    "image": "/products/marble-cheese-board.png",
+    "category": "Serveware"
+  },
+  {
+    "id": 7,
+    "name": "Japanese Chef Knife",
+    "description": "High-carbon stainless steel chef knife with a Damascus pattern. Razor-sharp precision.",
+    "price": 129.99,
+    "image": "/products/japanese-chef-knife.png",
+    "category": "Kitchen Tools"
+  },
+  {
+    "id": 8,
+    "name": "Linen Table Runner",
+    "description": "100% pure linen table runner in natural beige. Adds a touch of rustic elegance to your dining table.",
+    "price": 34.99,
+    "image": "/products/linen-table-runner.png",
+    "category": "Linens"
+  },
+  {
+    "id": 9,
+    "name": "Professional Espresso Machine",
+    "description": "Barista-quality espresso machine with built-in grinder and milk frother. Perfect coffee every morning.",
+    "price": 599.99,
+    "image": "/products/professional-espresso-machine.png",
+    "category": "Appliances"
+  },
+  {
+    "id": 10,
+    "name": "Classic Stand Mixer",
+    "description": "Powerful stand mixer with 5-quart bowl. Essential for baking cakes, breads, and cookies.",
+    "price": 349.99,
+    "image": "/products/classic-stand-mixer.png",
+    "category": "Appliances"
+  },
+  {
+    "id": 11,
+    "name": "Crystal Wine Glasses (Set of 4)",
+    "description": "Elegant lead-free crystal wine glasses. Designed to enhance the aroma and flavor of your favorite wines.",
+    "price": 79.99,
+    "image": "/products/crystal-wine-glasses.png",
+    "category": "Glassware"
+  },
+  {
+    "id": 12,
+    "name": "Enameled Dutch Oven",
+    "description": "Versatile cast iron dutch oven with enamel coating. Ideal for slow cooking, braising, and baking.",
+    "price": 149.99,
+    "image": "/products/enameled-dutch-oven.png",
+    "category": "Cookware"
+  },
+  {
+    "id": 13,
+    "name": "Ceramic Dinner Plate Set",
+    "description": "Hand-glazed ceramic plates, set of 4. Earthy tones, perfect for any dining occasion.",
+    "price": 89.99,
+    "image": "/products/ceramic-dinner-plate-set.png",
+    "category": "Dinnerware"
+  },
+  {
+    "id": 14,
+    "name": "Stainless Steel Cutlery Set",
+    "description": "24-piece set, modern design. Includes forks, knives, and spoons for 6 place settings.",
+    "price": 69.99,
+    "image": "/products/stainless-steel-cutlery-set.png",
+    "category": "Cutlery"
+  },
+  {
+    "id": 15,
+    "name": "Woven Placemats",
+    "description": "Natural seagrass placemats, set of 4. Adds a touch of nature to your table setting.",
+    "price": 29.99,
+    "image": "/products/woven-placemats.png",
+    "category": "Linens"
+  },
+  {
+    "id": 16,
+    "name": "Glass Water Pitcher",
+    "description": "Elegant glass pitcher with handle. Perfect for serving water, juice, or iced tea.",
+    "price": 24.99,
+    "image": "/products/glass-water-pitcher.png",
+    "category": "Glassware"
+  },
+  {
+    "id": 17,
+    "name": "Wooden Salad Bowl",
+    "description": "Acacia wood salad bowl with servers. Beautiful grain patterns make each bowl unique.",
+    "price": 44.99,
+    "image": "/products/wooden-salad-bowl.png",
+    "category": "Serveware"
+  },
+  {
+    "id": 18,
+    "name": "Electric Kettle",
+    "description": "Fast-boiling electric kettle, stainless steel. Auto shut-off and boil-dry protection.",
+    "price": 39.99,
+    "image": "/products/electric-kettle.png",
+    "category": "Appliances"
+  },
+  {
+    "id": 19,
+    "name": "Toaster",
+    "description": "2-slice toaster with wide slots. Adjustable browning control and defrost setting.",
+    "price": 29.99,
+    "image": "/products/toaster.png",
+    "category": "Appliances"
+  },
+  {
+    "id": 20,
+    "name": "Blender",
+    "description": "High-speed blender for smoothies and soups. Durable stainless steel blades.",
+    "price": 79.99,
+    "image": null,
+    "category": "Appliances"
+  }
+]
