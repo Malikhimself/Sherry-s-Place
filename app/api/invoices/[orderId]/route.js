@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import PDFDocument from "pdfkit";
 import { getOrderById } from "@/app/actions/orders";
+import path from "path";
 
 export async function GET(request, { params }) {
     const { orderId } = await params;
@@ -31,14 +32,21 @@ export async function GET(request, { params }) {
         // --- PDF Content ---
 
         // Header
+        const logoPath = path.join(process.cwd(), "public", "logo.jpg");
+        try {
+            doc.image(logoPath, 50, 45, { width: 50 });
+        } catch (e) {
+            console.error("Logo not found", e);
+        }
+
         doc
             .fillColor("#444444")
             .fontSize(20)
-            .text("Sherry's Place", 50, 57)
+            .text("Sherry's Place", 110, 57)
             .fontSize(10)
             .text("Sherry's Place", 200, 50, { align: "right" })
-            .text("123 Kitchen Lane", 200, 65, { align: "right" })
-            .text("New York, NY, 10025", 200, 80, { align: "right" })
+            .text("41, Salami Kasumu Street", 200, 65, { align: "right" })
+            .text("Mosan, Lagos State, Nigeria", 200, 80, { align: "right" })
             .moveDown();
 
         // Invoice Info
@@ -116,7 +124,7 @@ export async function GET(request, { params }) {
         doc
             .fontSize(10)
             .text(
-                "Thank you for your business.",
+                "Thank you for your patronage.",
                 50,
                 700,
                 { align: "center", width: 500 }
