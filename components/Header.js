@@ -26,7 +26,7 @@ export default function Header() {
                         />
                     </div>
                     <span className="text-2xl font-bold text-primary-green tracking-tight">
-                        Sherry's Place
+                        Sherry&apos;s Place
                     </span>
                 </Link>
 

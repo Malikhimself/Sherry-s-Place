@@ -1,0 +1,55 @@
+
+> sherrys-store@0.1.0 lint
+> eslint
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\app\admin\orders\[id]\page.js
+  55:49  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\app\auth\signin\page.js
+   63:35  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  168:28  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\app\auth\signup\page.js
+  81:35  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\app\cart\page.js
+  54:45  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\app\checkout\page.js
+  102:49  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\app\orders\page.js
+   43:42  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  108:61  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\app\page.js
+  34:23  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\components\Footer.js
+  12:86  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  68:61  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\components\Header.js
+  29:31  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\bisir\OneDrive\Documents\Sherry's Place\context\CartContext.js
+  16:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  14 |         if (savedCart) {
+  15 |             try {
+> 16 |                 setCartItems(JSON.parse(savedCart));
+     |                 ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  17 |             } catch (e) {
+  18 |                 console.error("Failed to parse cart from local storage", e);
+  19 |             }  react-hooks/set-state-in-effect
+
+✖ 13 problems (10 errors, 3 warnings)
+

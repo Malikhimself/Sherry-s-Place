@@ -40,7 +40,7 @@ export default async function OrdersPage() {
                                 No orders yet
                             </h2>
                             <p className="text-gray-600 mb-8">
-                                You haven't placed any orders yet. Start shopping to fill your
+                                You haven&apos;t placed any orders yet. Start shopping to fill your
                                 kitchen with premium cookware.
                             </p>
                             <Link

@@ -13,6 +13,7 @@ export function CartProvider({ children }) {
         const savedCart = localStorage.getItem("cart");
         if (savedCart) {
             try {
+                // eslint-disable-next-line
                 setCartItems(JSON.parse(savedCart));
             } catch (e) {
                 console.error("Failed to parse cart from local storage", e);

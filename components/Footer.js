@@ -9,7 +9,7 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="flex flex-col items-center">
                         <div className="max-w-xs w-full text-left">
-                            <h3 className="text-2xl font-bold mb-4 text-cream">Sherry's Place</h3>
+                            <h3 className="text-2xl font-bold mb-4 text-cream">Sherry&apos;s Place</h3>
                             <p className="text-cream/80">
                                 Premium kitchen cookwares and curated gifts for every occasion. Elevate your home with our exclusive collection.
                             </p>
@@ -65,7 +65,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-cream/20 mt-8 pt-8 text-center text-cream/60 text-sm">
-                    &copy; {new Date().getFullYear()} Sherry's Place. All rights reserved.
+                    &copy; {new Date().getFullYear()} Sherry&apos;s Place. All rights reserved.
                 </div>
             </div>
         </footer>

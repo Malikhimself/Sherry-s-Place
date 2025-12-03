@@ -60,7 +60,7 @@ export default function SignInPage() {
                             />
                         </div>
                         <span className="text-3xl font-bold text-primary-green">
-                            Sherry's Place
+                            Sherry&apos;s Place
                         </span>
                     </Link>
                     <h1 className="text-2xl font-bold text-text-dark mt-4">
@@ -165,7 +165,7 @@ export default function SignInPage() {
 
                     {/* Sign Up Link */}
                     <p className="text-center text-sm text-text-dark mt-6">
-                        Don't have an account?{" "}
+                        Don&apos;t have an account?{" "}
                         <Link
                             href="/auth/signup"
                             className="text-primary-green font-semibold hover:text-secondary-green transition-colors"

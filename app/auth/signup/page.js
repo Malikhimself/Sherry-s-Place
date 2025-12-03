@@ -78,7 +78,7 @@ export default function SignUpPage() {
                             />
                         </div>
                         <span className="text-3xl font-bold text-primary-green">
-                            Sherry's Place
+                            Sherry&apos;s Place
                         </span>
                     </Link>
                     <h1 className="text-2xl font-bold text-text-dark mt-4">

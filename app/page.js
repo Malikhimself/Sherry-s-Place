@@ -31,7 +31,7 @@ export default async function Home() {
 
             <div className="container mx-auto px-4 text-center z-10 relative">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
-                Sherry's Place
+                Sherry&apos;s Place
               </h1>
               <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
                 Elevate your culinary experience with our premium cookware and curated gifts.

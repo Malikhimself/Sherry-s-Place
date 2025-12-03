@@ -51,7 +51,7 @@ export default function CartPage() {
                     </div>
                     <h1 className="text-3xl font-bold text-primary-green mb-4">Your Cart is Empty</h1>
                     <p className="text-gray-600 mb-8 max-w-md">
-                        Looks like you haven't added anything to your cart yet. Explore our collection of premium kitchenware.
+                        Looks like you haven&apos;t added anything to your cart yet. Explore our collection of premium kitchenware.
                     </p>
                     <Link
                         href="/products"
