@@ -53,7 +53,7 @@ export default async function AdminOrdersPage() {
                                         {order.status}
                                     </span>
                                 </td>
-                                <td className="p-4 font-bold text-text-dark">${order.total.toFixed(2)}</td>
+                                <td className="p-4 font-bold text-text-dark">₦{order.total.toFixed(2)}</td>
                                 <td className="p-4 text-right">
                                     <Link
                                         href={`/admin/orders/${order.id}`}

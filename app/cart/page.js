@@ -26,21 +26,7 @@ export default function CartPage() {
             return;
         }
 
-        setIsCheckingOut(true);
-        try {
-            const result = await createOrder(cartItems, total);
-            if (result.success) {
-                clearCart();
-                router.push(`/orders/${result.orderId}`);
-            } else {
-                alert("Failed to create order. Please try again.");
-            }
-        } catch (error) {
-            console.error("Checkout error:", error);
-            alert("An error occurred during checkout.");
-        } finally {
-            setIsCheckingOut(false);
-        }
+        router.push("/checkout");
     }
 
     if (!isLoaded) {
@@ -104,9 +90,9 @@ export default function CartPage() {
                                         <div className="flex-grow">
                                             <div className="flex justify-between items-start mb-2">
                                                 <h3 className="font-semibold text-lg text-text-dark">{item.name}</h3>
-                                                <span className="font-bold text-primary-green">${(item.price * item.quantity).toFixed(2)}</span>
+                                                <span className="font-bold text-primary-green">₦{(item.price * item.quantity).toFixed(2)}</span>
                                             </div>
-                                            <div className="text-gray-500 text-sm mb-4">${item.price.toFixed(2)} each</div>
+                                            <div className="text-gray-500 text-sm mb-4">₦{item.price.toFixed(2)} each</div>
 
                                             <div className="flex justify-between items-center">
                                                 <div className="flex items-center border border-gray-200 rounded-lg">
@@ -154,7 +140,7 @@ export default function CartPage() {
                             <div className="space-y-4 mb-6">
                                 <div className="flex justify-between text-gray-600">
                                     <span>Subtotal</span>
-                                    <span>${cartTotal.toFixed(2)}</span>
+                                    <span>₦{cartTotal.toFixed(2)}</span>
                                 </div>
                                 <div className="flex justify-between text-gray-600">
                                     <span>Shipping</span>
@@ -162,7 +148,7 @@ export default function CartPage() {
                                 </div>
                                 <div className="border-t border-gray-100 pt-4 flex justify-between font-bold text-lg text-text-dark">
                                     <span>Total</span>
-                                    <span>${total.toFixed(2)}</span>
+                                    <span>₦{total.toFixed(2)}</span>
                                 </div>
                             </div>
 

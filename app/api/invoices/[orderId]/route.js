@@ -59,7 +59,7 @@ export async function GET(request, { params }) {
             .fontSize(10)
             .text(`Invoice Number: ${order.id}`, 50, 200)
             .text(`Invoice Date: ${new Date(order.createdAt).toLocaleDateString()}`, 50, 215)
-            .text(`Balance Due: $0.00`, 50, 230) // Assuming paid
+            .text(`Balance Due: ₦0.00`, 50, 230) // Assuming paid
             .moveDown();
 
         // Customer Info
@@ -96,8 +96,8 @@ export async function GET(request, { params }) {
                 .fontSize(10)
                 .text(item.product.name.substring(0, 40) + (item.product.name.length > 40 ? "..." : ""), 50, position)
                 .text(item.quantity.toString(), 300, position)
-                .text(`$${item.price.toFixed(2)}`, 370, position)
-                .text(`$${(item.price * item.quantity).toFixed(2)}`, 450, position, { align: "right" });
+                .text(`₦${item.price.toFixed(2)}`, 370, position)
+                .text(`₦${(item.price * item.quantity).toFixed(2)}`, 450, position, { align: "right" });
 
             doc
                 .strokeColor("#eeeeee")
@@ -114,11 +114,11 @@ export async function GET(request, { params }) {
         doc
             .font("Helvetica-Bold")
             .text("Subtotal", 370, subtotalPosition)
-            .text(`$${order.total.toFixed(2)}`, 450, subtotalPosition, { align: "right" });
+            .text(`₦${order.total.toFixed(2)}`, 450, subtotalPosition, { align: "right" });
 
         doc
             .text("Total", 370, subtotalPosition + 20)
-            .text(`$${order.total.toFixed(2)}`, 450, subtotalPosition + 20, { align: "right" });
+            .text(`₦${order.total.toFixed(2)}`, 450, subtotalPosition + 20, { align: "right" });
 
         // Footer
         doc

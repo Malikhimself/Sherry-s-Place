@@ -102,7 +102,7 @@ export default async function AdminDashboard() {
                             <DollarSign size={20} />
                         </div>
                     </div>
-                    <p className="text-3xl font-bold text-text-dark">${totalRevenue.toFixed(2)}</p>
+                    <p className="text-3xl font-bold text-text-dark">₦{totalRevenue.toFixed(2)}</p>
                     <p className="text-sm text-green-600 mt-2 flex items-center gap-1">
                         <span className="font-medium">+15%</span> from last month
                     </p>
@@ -141,7 +141,7 @@ export default async function AdminDashboard() {
                             <tr key={product.id} className="border-b border-gray-100 last:border-0 hover:bg-gray-50">
                                 <td className="p-4 text-gray-500">#{product.id}</td>
                                 <td className="p-4 font-medium text-text-dark">{product.name}</td>
-                                <td className="p-4 text-gray-600">${product.price.toFixed(2)}</td>
+                                <td className="p-4 text-gray-600">₦{product.price.toFixed(2)}</td>
                                 <td className="p-4 text-gray-600">
                                     <span className="bg-cream text-primary-green px-2 py-1 rounded-full text-xs font-medium border border-primary-green/10">
                                         {product.category}

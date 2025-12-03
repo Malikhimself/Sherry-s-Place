@@ -5,7 +5,7 @@ import { auth } from "@/lib/auth";
 
 const prisma = new PrismaClient();
 
-export async function createOrder(cartItems, total) {
+export async function createOrder(cartItems, total, status = "pending") {
     try {
         const session = await auth();
         if (!session?.user) {
@@ -17,7 +17,7 @@ export async function createOrder(cartItems, total) {
             data: {
                 userId: parseInt(session.user.id),
                 total,
-                status: "pending",
+                status,
                 items: {
                     create: cartItems.map((item) => ({
                         productId: item.id,

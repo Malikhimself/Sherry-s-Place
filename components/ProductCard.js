@@ -30,7 +30,7 @@ export default function ProductCard({ product }) {
 
                 <div className="flex items-center justify-between mt-auto">
                     <span className="text-xl font-bold text-primary-green">
-                        ${product.price.toFixed(2)}
+                        ₦{product.price.toFixed(2)}
                     </span>
                     <AddToCartButton product={product} />
                 </div>

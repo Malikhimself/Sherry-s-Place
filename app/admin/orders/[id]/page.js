@@ -61,7 +61,7 @@ export default async function AdminOrderDetailsPage({ params }) {
                                                     <h3 className="font-semibold text-text-dark">{item.product.name}</h3>
                                                     <p className="text-sm text-gray-500">Qty: {item.quantity}</p>
                                                 </div>
-                                                <div className="font-bold text-text-dark">${(item.price * item.quantity).toFixed(2)}</div>
+                                                <div className="font-bold text-text-dark">₦{(item.price * item.quantity).toFixed(2)}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -101,7 +101,7 @@ export default async function AdminOrderDetailsPage({ params }) {
                         <div className="space-y-3">
                             <div className="flex justify-between text-gray-600">
                                 <span>Subtotal</span>
-                                <span>${order.total.toFixed(2)}</span>
+                                <span>₦{order.total.toFixed(2)}</span>
                             </div>
                             <div className="flex justify-between text-gray-600">
                                 <span>Shipping</span>
@@ -109,7 +109,7 @@ export default async function AdminOrderDetailsPage({ params }) {
                             </div>
                             <div className="border-t border-gray-100 pt-3 flex justify-between font-bold text-lg text-text-dark">
                                 <span>Total</span>
-                                <span>${order.total.toFixed(2)}</span>
+                                <span>₦{order.total.toFixed(2)}</span>
                             </div>
                         </div>
                     </div>

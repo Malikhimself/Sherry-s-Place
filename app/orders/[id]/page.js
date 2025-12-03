@@ -124,11 +124,11 @@ export default async function OrderDetailsPage({ params }) {
                                                         </p>
                                                     </div>
                                                     <div className="font-bold text-text-dark">
-                                                        ${(item.price * item.quantity).toFixed(2)}
+                                                        ₦{(item.price * item.quantity).toFixed(2)}
                                                     </div>
                                                 </div>
                                                 <div className="text-xs text-gray-400 mt-1">
-                                                    ${item.price.toFixed(2)} each
+                                                    ₦{item.price.toFixed(2)} each
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@ export default async function OrderDetailsPage({ params }) {
                                     <div className="bg-gray-50 rounded-lg p-4 space-y-3">
                                         <div className="flex justify-between text-gray-600">
                                             <span>Subtotal</span>
-                                            <span>${order.total.toFixed(2)}</span>
+                                            <span>₦{order.total.toFixed(2)}</span>
                                         </div>
                                         <div className="flex justify-between text-gray-600">
                                             <span>Shipping</span>
@@ -155,7 +155,7 @@ export default async function OrderDetailsPage({ params }) {
                                         </div>
                                         <div className="border-t border-gray-200 pt-3 flex justify-between font-bold text-lg text-text-dark">
                                             <span>Total</span>
-                                            <span>${order.total.toFixed(2)}</span>
+                                            <span>₦{order.total.toFixed(2)}</span>
                                         </div>
                                     </div>
                                 </div>

@@ -20,6 +20,7 @@
     "pdfkit": "^0.17.2",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "react-paystack": "^6.0.0",
     "recharts": "^3.5.0"
   },
   "devDependencies": {

@@ -63,7 +63,7 @@ export default async function ProductPage({ params }) {
                     <div className="flex flex-col justify-center">
                         <span className="text-secondary-green font-medium mb-2">{product.category}</span>
                         <h1 className="text-4xl font-bold text-primary-green mb-4">{product.name}</h1>
-                        <p className="text-2xl font-bold text-text-dark mb-6">${product.price.toFixed(2)}</p>
+                        <p className="text-2xl font-bold text-text-dark mb-6">₦{product.price.toFixed(2)}</p>
 
                         <div className="prose prose-lg text-gray-600 mb-8">
                             <p>{product.description}</p>
@@ -74,7 +74,7 @@ export default async function ProductPage({ params }) {
                         </div>
 
                         <div className="mt-8 pt-8 border-t border-gray-100 text-sm text-gray-500">
-                            <p>Free shipping on orders over $50</p>
+                            <p>Free shipping on orders over ₦50</p>
                             <p className="mt-2">30-day money-back guarantee</p>
                         </div>
                     </div>
