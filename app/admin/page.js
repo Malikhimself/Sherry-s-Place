@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Plus, Edit, Trash2, Users, ShoppingBag, DollarSign, Package } from "lucide-react";
+import { Plus, Edit, Trash2, Users, ShoppingBag, DollarSign, Package, Home } from "lucide-react";
 import { getProducts } from "@/lib/products";
 import { getUsers } from "@/lib/users";
 import { getOrders } from "@/lib/orders";
@@ -57,7 +57,16 @@ export default async function AdminDashboard() {
     return (
         <div className="container mx-auto px-4 py-12">
             <div className="flex justify-between items-center mb-8">
-                <h1 className="text-3xl font-bold text-primary-green">Admin Dashboard</h1>
+                <div className="flex items-center gap-4">
+                    <Link
+                        href="/"
+                        className="bg-white p-2 rounded-lg text-primary-green border border-primary-green/20 hover:bg-gray-50 transition-colors"
+                        title="Back to Website"
+                    >
+                        <Home size={24} />
+                    </Link>
+                    <h1 className="text-3xl font-bold text-primary-green">Admin Dashboard</h1>
+                </div>
                 <Link
                     href="/admin/add"
                     className="bg-primary-green text-white px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-secondary-green transition-colors"
