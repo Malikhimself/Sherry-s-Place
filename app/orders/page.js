@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getUserOrders } from "@/app/actions/orders";
 
+export const dynamic = "force-dynamic";
+
 export default async function OrdersPage() {
     const { success, orders, error } = await getUserOrders();
 

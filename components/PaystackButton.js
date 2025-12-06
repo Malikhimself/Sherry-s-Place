@@ -1,6 +1,11 @@
 "use client";
 
-import { PaystackButton } from "react-paystack";
+import dynamic from "next/dynamic";
+
+const PaystackButton = dynamic(
+    () => import("react-paystack").then((mod) => mod.PaystackButton),
+    { ssr: false }
+);
 
 export default function PaystackPaymentButton({ amount, email, onSuccess, onClose }) {
     const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY;

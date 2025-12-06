@@ -5,11 +5,33 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
+import { Suspense } from "react";
 
-export default function SuccessPage() {
+function SuccessContent() {
     const searchParams = useSearchParams();
     const orderId = searchParams.get("orderId");
 
+    return (
+        <div className="flex gap-4">
+            {orderId && (
+                <Link
+                    href={`/orders/${orderId}`}
+                    className="bg-primary-green text-white px-8 py-3 rounded-full font-bold hover:bg-secondary-green transition-colors shadow-lg active:scale-95"
+                >
+                    View Order
+                </Link>
+            )}
+            <Link
+                href="/products"
+                className="bg-white border border-primary-green text-primary-green px-8 py-3 rounded-full font-bold hover:bg-green-50 transition-colors shadow-sm active:scale-95"
+            >
+                Continue Shopping
+            </Link>
+        </div>
+    );
+}
+
+export default function SuccessPage() {
     return (
         <div className="min-h-screen flex flex-col bg-cream">
             <Header />
@@ -21,22 +43,9 @@ export default function SuccessPage() {
                 <p className="text-gray-600 mb-8 max-w-md">
                     Thank you for your purchase. Your order has been confirmed and will be shipped soon.
                 </p>
-                <div className="flex gap-4">
-                    {orderId && (
-                        <Link
-                            href={`/orders/${orderId}`}
-                            className="bg-primary-green text-white px-8 py-3 rounded-full font-bold hover:bg-secondary-green transition-colors shadow-lg active:scale-95"
-                        >
-                            View Order
-                        </Link>
-                    )}
-                    <Link
-                        href="/products"
-                        className="bg-white border border-primary-green text-primary-green px-8 py-3 rounded-full font-bold hover:bg-green-50 transition-colors shadow-sm active:scale-95"
-                    >
-                        Continue Shopping
-                    </Link>
-                </div>
+                <Suspense fallback={<div className="h-12 w-full animate-pulse bg-gray-200 rounded-full max-w-sm"></div>}>
+                    <SuccessContent />
+                </Suspense>
             </main>
             <Footer />
         </div>

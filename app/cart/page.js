@@ -171,7 +171,7 @@ export default function CartPage() {
                             </button>
 
                             <div className="mt-4 text-center text-xs text-gray-500">
-                                Secure Checkout powered by Stripe
+                                Secure Checkout powered by Paystack
                             </div>
                         </div>
                     </div>
